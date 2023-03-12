@@ -19,11 +19,18 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+:root {
+  --accent-color: #404bbf;
+  --main-title-color: #ffffff;
+  --future-title-color: #2e2f42;
+  --future-text-color: #434455;
+  --background-color: #ffffff;
+}
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  color: #2e2f42;
+  --future-title-color: #2e2f42;
+  --background-color: #ffffff;
+  font-size: 16px;
 }
 
 /* Header */
@@ -31,7 +38,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   color: #2e2f42;
   text-transform: uppercase;
@@ -41,14 +48,10 @@ body {
   color: #4d5ae5;
 }
 
-.menu-item {
+.menu-link {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.menu-link {
   color: #2e2f42;
 }
 
@@ -64,7 +67,6 @@ body {
 .contact-mail,
 .contact-phone-number {
   font-style: normal;
-  font-weight: 400;
   color: #434455;
 }
 
@@ -74,12 +76,12 @@ body {
 }
 .contact-phone-number:hover,
 :focus {
-  color: #404bbf;
+  color: var(--accent-color);
 }
 
 .contact-mail:active,
 .contact-phone-number:active {
-  color: #404bbf;
+  color: var(--accent-color);
 }
 
 /* Hero */
@@ -87,11 +89,10 @@ body {
   background: #2e2f42;
 }
 .main-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 
 /* Buttons */
@@ -124,42 +125,37 @@ body {
 .filter:hover,
 .filter:focus {
   color: #ffffff;
-  background: #404bbf;
+  background: var(--accent-color);
 }
 
 /* Next sections elements */
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--future-title-color);
 }
-.subtitle {
-  font-weight: 500;
-  font-size: 20px;
+.future-title {
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--future-title-color);
 }
 
-.clarification {
-  font-weight: 400;
-  font-size: 16px;
+.future-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--future-text-color);
 }
 
 /* Footer */
-.ftr {
+.footer-text {
   color: #f4f4fd;
 }
 
-.ftr-bg {
-  background: #2e2f42;
+.footer-bg {
+  background: var(--future-title-color);
 }
 .studio {
   color: #f4f4fd;
