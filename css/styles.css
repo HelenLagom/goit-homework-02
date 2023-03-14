@@ -62,11 +62,9 @@ body {
 .menu-link:focus {
   color: var(--accent-color);
 }
-
 .menu-link.active {
   color: var(--accent-color);
 }
-
 .contact-mail,
 .contact-phone-number {
   font-style: normal;
