@@ -1,8 +1,8 @@
 :root {
   --accent-color: #404bbf;
   --main-title-color: #ffffff;
-  --future-title-color: #2e2f42;
-  --future-text-color: #434455;
+  --title-color: #2e2f42;
+  --text-color: #434455;
   --background-color: #ffffff;
   --second-accent-color: #4d5ae5;
   --footer-filter-color: #f4f4fd;
@@ -31,7 +31,6 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--accent-color);
   background-color: var(--background-color);
   font-size: 16px;
 }
@@ -43,7 +42,7 @@ body {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  color: var(--future-title-color);
+  color: var(--title-color);
   text-transform: uppercase;
 }
 
@@ -55,7 +54,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--future-title-color);
+  color: var(--title-color);
 }
 
 .menu-link:hover,
@@ -68,7 +67,7 @@ body {
 .contact-mail,
 .contact-phone-number {
   font-style: normal;
-  color: var(--future-text-color);
+  color: var(--text-color);
 }
 
 .contact-mail:hover,
@@ -82,7 +81,7 @@ body {
 
 /* Hero */
 .hero {
-  background: var(--future-title-color);
+  background: var(--title-color);
 }
 .main-title {
   font-size: 56px;
@@ -131,19 +130,19 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--future-title-color);
+  color: var(--title-color);
 }
-.future-title {
+.features-title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--future-title-color);
+  color: var(--title-color);
 }
 
-.future-text {
+.features-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--future-text-color);
+  color: var(--text-color);
 }
 
 /* Footer */
@@ -152,7 +151,7 @@ body {
 }
 
 .footer-bg {
-  background: var(--future-title-color);
+  background: var(--title-color);
 }
 .studio {
   color: var(--footer-filter-color);
